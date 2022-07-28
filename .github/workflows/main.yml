@@ -8,20 +8,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
-    # 運行在 ubuntu 上
+  build:
     runs-on: ubuntu-latest
     steps:
-      # checkout 至 repo 的 master branch
-      - uses: actions/checkout@v2
-      # 設定 node 環境
-      - name: Setup node
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: 16
-          registry-url: https://npm.pkg.github.com/
-          scope: '@c1495616js'
-      # install & lint
+          node-version: '16.x'
+          registry-url: https://registry.npmjs.org
       - run: npm run ci:bootstrap
       # - run: npm run lint
       # 利用 automation token publish 至 npm
