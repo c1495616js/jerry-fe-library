@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     // 載入 base 的設定
-    './base.eslint.config',
+    './lib/base',
 
     // 套用針對 react 想要使用的設定
     'plugin:react/recommended',
