@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "jerry-fe-library",
   "private": true,
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap",

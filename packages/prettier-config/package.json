@@ -10,7 +10,7 @@
   "homepage": "https://github.com/c1495616js/jerry-fe-library/tree/main/packages/prettier-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/c1495616js/jerry-fe-library.git",
+    "url": "ssh://git@github.com/c1495616js/jerry-fe-library.git",
     "directory": "packages/prettier-config"
   },
   "bugs": "https://github.com/c1495616js/jerry-fe-library/issues",

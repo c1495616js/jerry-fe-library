@@ -3,8 +3,13 @@
   "version": "independent",
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com/"
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "main"
     },
+    "npmClient": "yarn",
+    "useWorkspaces": true,
     "version": {
       "push": false,
       "message": "chore(release): publish",
