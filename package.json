@@ -1,6 +1,6 @@
 {
   "name": "jerry-fe-library",
-  "private": true,
+  "private": false,
   "scripts": {
     "bootstrap": "npm install && lerna bootstrap",
     "format": "lerna run format",
