@@ -1,0 +1,30 @@
+name: 'Publish 📦'
+on:
+  # 當有新的 change 進到 master 時觸發
+  push:
+    branches:
+      - main
+  # 讓你能夠手動觸發，方便測試
+  workflow_dispatch:
+
+jobs:
+  publish:
+    # 運行在 ubuntu 上
+    runs-on: ubuntu-latest
+    steps:
+      # checkout 至 repo 的 master branch
+      - uses: actions/checkout@v2
+      # 設定 node 環境
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: '@c1495616js'
+      # install & lint
+      - run: npm run ci:bootstrap
+      # - run: npm run lint
+      # 利用 automation token publish 至 npm
+      - run: npm run ci:publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}

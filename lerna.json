@@ -1,0 +1,18 @@
+{
+  "packages": ["packages/*"],
+  "version": "independent",
+  "command": {
+    "version": {
+      "push": false,
+      "message": "chore(release): publish",
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        ".*",
+        "./*.md",
+        "./package.json",
+        "./package-lock.json",
+        "./lerna.json"
+      ]
+    }
+  }
+}

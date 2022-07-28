@@ -1,0 +1,44 @@
+{
+  "name": "@c1495616js/eslint-config",
+  "version": "0.0.0",
+  "description": "common eslint config",
+  "author": "Jerry Wang <c1495616@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "browserslist"
+  ],
+  "homepage": "https://github.com/c1495616js/jerry-fe-library/tree/main/packages/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c1495616js/jerry-fe-library.git",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": "https://github.com/c1495616js/jerry-fe-library/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "base.eslint.config.js",
+  "scripts": {
+    "format": "prettier --write index.js",
+    "lint": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwindcss": "^3.6.0",
+    "eslint-plugin-testing-library": "^5.5.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.20.0"
+  }
+}
