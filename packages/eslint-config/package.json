@@ -17,7 +17,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@c1495616js"
   },
-  "main": "base.eslint.config.js",
+  "main": "index.js",
   "scripts": {
     "format": "prettier --write index.js",
     "lint": "eslint **/*.js"
