@@ -1,0 +1,34 @@
+{
+  "name": "@c1495616js/stylelint-config",
+  "version": "0.0.0",
+  "description": "common stylelint config",
+  "author": "Jerry Wang <c1495616@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "stylelint"
+  ],
+  "homepage": "https://github.com/c1495616js/jerry-fe-library/tree/main/packages/stylelint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c1495616js/jerry-fe-library.git",
+    "directory": "packages/stylelint-config"
+  },
+  "bugs": "https://github.com/c1495616js/jerry-fe-library/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write index.js",
+    "lint": "eslint index.js"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.14",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.4",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}

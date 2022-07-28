@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "plugin:prettier/recommended"],
+  extends: ['airbnb', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     commonjs: true,
@@ -9,17 +9,17 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
-  plugins: ["simple-import-sort", "import", "tailwindcss"],
+  plugins: ['simple-import-sort', 'import', 'tailwindcss'],
   rules: {},
   // override the default
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
 };
