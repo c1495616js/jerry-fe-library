@@ -22,4 +22,11 @@ module.exports = {
       version: 'detect',
     },
   },
+  'prettier/prettier': [
+    'error',
+    {},
+    {
+      usePrettierrc: false,
+    },
+  ],
 };
