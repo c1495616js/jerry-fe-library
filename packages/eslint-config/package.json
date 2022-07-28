@@ -8,7 +8,8 @@
     "eslint"
   ],
   "files": [
-    "lib"
+    "lib",
+    "*.js"
   ],
   "homepage": "https://github.com/c1495616js/jerry-fe-library/tree/main/packages/eslint-config",
   "repository": {
