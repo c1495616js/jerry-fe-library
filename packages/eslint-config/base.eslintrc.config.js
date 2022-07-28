@@ -15,18 +15,19 @@ module.exports = {
     },
   },
   plugins: ['simple-import-sort', 'import', 'tailwindcss'],
-  rules: {},
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {},
+      {
+        usePrettierrc: false,
+      },
+    ],
+  },
   // override the default
   settings: {
     react: {
       version: 'detect',
     },
   },
-  'prettier/prettier': [
-    'error',
-    {},
-    {
-      usePrettierrc: false,
-    },
-  ],
 };
