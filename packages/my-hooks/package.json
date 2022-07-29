@@ -1,6 +1,6 @@
 {
   "name": "@c1495616js/myhooks",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "author": {
     "name": "Jerry Wang",
@@ -33,7 +33,8 @@
     "deploy": "gh-pages -d example/build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "lint-staged": "lint-staged --allow-empty"
   },
   "peerDependencies": {
     "react": "^16.14.0",

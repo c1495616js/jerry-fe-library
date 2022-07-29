@@ -1,6 +1,6 @@
 {
   "name": "@c1495616js/eslint-config",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "common eslint config",
   "author": "Jerry Wang <c1495616@gmail.com>",
   "license": "MIT",
@@ -24,7 +24,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write index.js",
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.31.0",
