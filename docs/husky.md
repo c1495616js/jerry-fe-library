@@ -22,3 +22,19 @@ npm install is-ci --save-dev
   }
 }
 ```
+
+## Commitlint
+
+- `npm install --save-dev @commitlint/{cli,config-conventional}`
+
+- `echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js`
+
+### Refs
+
+- https://www.freecodecamp.org/news/how-to-use-commitlint-to-write-good-commit-messages/
+
+## Commitizen
+
+- `npm install --save-dev commitizen`
+
+- `npx commitizen init cz-conventional-changelog --save-dev --save-exact`
