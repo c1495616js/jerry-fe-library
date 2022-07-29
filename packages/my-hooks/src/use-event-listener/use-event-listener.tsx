@@ -52,7 +52,7 @@ function useEventListener<
   useEffect(() => {
     // Define the listening target
     const targetElement: T | Window = element?.current || window;
-    if (!(targetElement && targetElement.addEventListener)) {
+    if (!(targetElement && (targetElement as any)?.addEventListener)) {
       return;
     }
 
@@ -60,11 +60,11 @@ function useEventListener<
     const eventListener: typeof handler = (event) =>
       savedHandler.current(event);
 
-    targetElement.addEventListener(eventName, eventListener, options);
+    (targetElement as any)?.addEventListener(eventName, eventListener, options);
 
     // Remove event listener on cleanup
     return () => {
-      targetElement.removeEventListener(eventName, eventListener);
+      (targetElement as any)?.removeEventListener(eventName, eventListener);
     };
   }, [eventName, element, options]);
 }
