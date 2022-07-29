@@ -20,7 +20,8 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write index.js",
-    "lint": "eslint index.js"
+    "lint": "eslint index.js",
+    "lint-staged": "lint-staged"
   },
   "peerDependencies": {
     "prettier": "^2.7.1"
