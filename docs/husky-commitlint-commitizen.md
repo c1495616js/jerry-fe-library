@@ -1,4 +1,4 @@
-# Setup Husky
+# Setup Husky + Commitlint + Commitizen
 
 https://typicode.github.io/husky
 
@@ -38,3 +38,16 @@ npm install is-ci --save-dev
 - `npm install --save-dev commitizen`
 
 - `npx commitizen init cz-conventional-changelog --save-dev --save-exact`
+
+```js
+...
+  "scripts": {
+    "commit": "cz"
+  }
+```
+
+Then,
+
+```bash
+npm run commit
+```
