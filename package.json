@@ -10,13 +10,18 @@
     "prerelease": "npm run lint && npm run test",
     "release": "lerna version",
     "ci:bootstrap": "npm ci && lerna bootstrap --ci",
-    "ci:publish": "lerna publish from-package --yes --no-verify-access"
+    "ci:publish": "lerna publish from-package --yes --no-verify-access",
+    "prepare": "is-ci || husky install"
   },
   "devDependencies": {
     "@c1495616js/eslint-config": "file:packages/eslint-config",
     "@c1495616js/prettier-config": "file:packages/prettier-config",
     "@c1495616js/stylelint-config": "file:packages/stylelint-config",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "eslint": "^8.20.0",
+    "husky": "^8.0.0",
+    "is-ci": "^3.0.1",
     "lerna": "^4.0.0",
     "prettier": "^2.7.1"
   }
