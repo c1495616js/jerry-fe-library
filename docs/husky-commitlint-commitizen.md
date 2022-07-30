@@ -71,4 +71,35 @@ npm run commit
 
 ## lint-staged
 
-- `npx lerna add --dev lint-staged --scope=@c1495616js/myhooks` (scope is the `name` property in `package.json`)
+- install `lint-staged` in root folder.
+- add `.lintstagedrc` in root folder
+
+```json
+{
+  "**/*.{js,jsx,ts,tsx}": ["npx prettier --write", "npx eslint --fix"]
+}
+```
+
+- add npm-script in each package
+
+```json
+"scripts":{
+  ...
+  "lint-staged": "lint-staged --no-stash"
+}
+```
+
+- in file `.husky/pre-commit`, add this
+
+```bash
+npm run lint-staged
+```
+
+## Lerna
+
+- Add package
+  (scope is the `name` property in `package.json`)
+
+```bash
+npx lerna add --dev lint-staged --scope=@c1495616js/myhooks
+```
