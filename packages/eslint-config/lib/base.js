@@ -14,12 +14,15 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['simple-import-sort', 'tailwindcss'],
+  plugins: ['import', 'simple-import-sort', 'tailwindcss'],
   rules: {},
   // override the default
   settings: {
     react: {
       version: 'detect',
+    },
+    'import/resolver': {
+      typescript: {},
     },
   },
 };
