@@ -82,6 +82,8 @@ npm run commit
 
 - add npm-script in each package
 
+For the `--no-stash`, refering [this](https://github.com/okonet/lint-staged/issues/795)
+
 ```json
 "scripts":{
   ...
