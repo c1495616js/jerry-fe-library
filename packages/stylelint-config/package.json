@@ -21,7 +21,7 @@
   "scripts": {
     "format": "prettier --write index.js",
     "lint": "eslint index.js",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged --no-stash"
   },
   "peerDependencies": {
     "postcss": "^8.4.14",

@@ -21,6 +21,6 @@
   "scripts": {
     "format": "prettier --write index.js",
     "lint": "eslint index.js",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged --no-stash"
   }
 }
