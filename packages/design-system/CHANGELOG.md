@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/design-system@1.1.6...@c1495616js/design-system@1.1.7) (2022-08-03)
+
+
+### Bug Fixes
+
+* sourcemap ([4ea057c](https://github.com/c1495616js/jerry-fe-library/commit/4ea057ca68a59d22387039d863b67a2037964286))
+
+
+
+
+
 ## [1.1.6](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/design-system@1.1.5...@c1495616js/design-system@1.1.6) (2022-08-03)
 
 
