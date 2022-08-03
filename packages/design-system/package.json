@@ -7,9 +7,10 @@
   "types": "dist/esm/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
-    "build": "npm run build:esm && npm run build:cjs",
+    "build": "npm run build:esm && npm run build:cjs && npm run build:alias",
     "build:esm": "tsc --module esNext --outDir dist/esm",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "build:alias": "tsc-alias -p tsconfig.json",
     "test": "",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -56,6 +57,7 @@
     "@types/node": "^18.6.3",
     "@types/react": "^18.0.15",
     "babel-loader": "^8.2.5",
+    "tsc-alias": "^1.7.0",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
