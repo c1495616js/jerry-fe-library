@@ -15,7 +15,7 @@ module.exports = {
     },
   },
   plugins: ['import', 'simple-import-sort', 'tailwindcss'],
-  rules: {},
+  rules: { 'no-restricted-exports': 'off' },
   // override the default
   settings: {
     react: {
@@ -23,6 +23,9 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {},
+      node: {
+        moduleDirectory: ['node_modules', 'src/'],
+      },
     },
   },
 };

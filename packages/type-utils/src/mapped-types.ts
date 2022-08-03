@@ -16,3 +16,18 @@ import { Primitive } from './aliases-and-guards';
  *   SetIntersection<string | number | (() => void), Function>;
  */
 export type SetIntersection<A, B> = A extends B ? A : never;
+
+/**
+ * Mutable
+ * @desc From `T` make all properties become mutable
+ * @example
+ *    type Props = {
+ *      readonly name: string;
+ *      readonly age: number;
+ *      readonly visible: boolean;
+ *    };
+ *
+ *    // Expect: { name: string; age: number; visible: boolean; }
+ *    Mutable<Props>;
+ */
+export type Mutable<T> = { -readonly [P in keyof T]: T[P] };
