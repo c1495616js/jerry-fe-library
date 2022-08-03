@@ -1,5 +1,13 @@
 import { styled } from '@/lib/stitches.config';
 
+export const FlexDefaultProps = Object.freeze({
+  gap: 1,
+  wrap: 'nowrap',
+  direction: 'row',
+  alignItems: 'center',
+  justifyContent: 'start',
+});
+
 const Flex = styled('div', {
   display: 'flex',
 
@@ -134,13 +142,7 @@ const Flex = styled('div', {
       },
     },
   },
-  defaultVariants: {
-    gap: 1,
-    wrap: 'nowrap',
-    direction: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-  },
+  defaultVariants: FlexDefaultProps,
 });
 
 export default Flex;

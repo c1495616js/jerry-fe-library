@@ -1,22 +1,24 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Flex from './flex';
+import Flex, { FlexDefaultProps } from './flex';
 
 export default {
   title: 'Flex',
   component: Flex,
+  argTypes: {
+    justifyContent: {
+      options: ['start', 'center', 'end'],
+      control: { type: 'select' },
+    },
+  },
 } as ComponentMeta<typeof Flex>;
 
-const Template: ComponentStory<typeof Flex> = (args) => <Flex {...args} />;
+const Template: ComponentStory<typeof Flex> = (args) => (
+  <Flex {...args}>
+    <div>Child 1</div> <div>Child2</div>
+  </Flex>
+);
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 
-Primary.args = {
-  children: (
-    <>
-      <div>sd</div>
-      <div>jsfo</div>
-    </>
-  ),
-  justifyContent: 'center',
-};
+Default.args = FlexDefaultProps;
