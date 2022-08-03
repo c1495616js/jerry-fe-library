@@ -1,8 +1,5 @@
 module.exports = {
   extends: [
-    // 載入 base 的設定
-    './lib/base',
-
     // 套用針對 react 想要使用的設定
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -11,5 +8,8 @@ module.exports = {
     // new JSX transform
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/function-component-definition': 'off',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };
