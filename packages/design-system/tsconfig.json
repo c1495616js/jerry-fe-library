@@ -5,10 +5,11 @@
     "paths": {
       "@/*": ["./*"]
     },
+    "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
     "declaration": true,
-    "declarationDir": "dist/types",
+    "declarationMap": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,6 +23,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "esnext"
   }
 }
