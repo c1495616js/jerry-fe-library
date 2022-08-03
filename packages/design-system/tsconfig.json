@@ -5,11 +5,11 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "sourceMap": true,
+    "sourceMap": false,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

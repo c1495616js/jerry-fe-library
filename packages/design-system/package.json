@@ -16,7 +16,8 @@
     "build-storybook": "build-storybook"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "keywords": [],
   "author": "",
