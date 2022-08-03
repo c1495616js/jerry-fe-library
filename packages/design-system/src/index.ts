@@ -1,3 +1,5 @@
+export { default as Flex } from './components/flex';
+
 /** LIB * */
 export {
   styled,
