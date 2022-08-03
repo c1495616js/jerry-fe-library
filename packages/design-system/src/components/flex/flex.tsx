@@ -143,4 +143,4 @@ const Flex = styled('div', {
   },
 });
 
-export { Flex };
+export default Flex;
