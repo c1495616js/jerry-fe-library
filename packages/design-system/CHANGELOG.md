@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/design-system@1.1.5...@c1495616js/design-system@1.1.6) (2022-08-03)
+
+
+### Bug Fixes
+
+* tsc-alias ([1c0a386](https://github.com/c1495616js/jerry-fe-library/commit/1c0a38677dbefa40d32684eaa26f86962184a7c2))
+
+
+
+
+
 ## [1.1.5](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/design-system@1.1.4...@c1495616js/design-system@1.1.5) (2022-08-03)
 
 
