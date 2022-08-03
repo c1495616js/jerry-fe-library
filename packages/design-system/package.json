@@ -10,7 +10,7 @@
     "build": "npm run build:esm && npm run build:cjs && npm run build:alias",
     "build:esm": "tsc --module esNext --outDir dist/esm",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "build:alias": "tsc-alias -p tsconfig.json",
+    "build:alias": "tsc-alias",
     "test": "",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
