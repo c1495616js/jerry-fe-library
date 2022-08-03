@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/eslint-config@0.1.4...@c1495616js/eslint-config@0.1.5) (2022-08-03)
+
+**Note:** Version bump only for package @c1495616js/eslint-config
+
+
+
+
+
 ## [0.1.4](https://github.com/c1495616js/jerry-fe-library/compare/@c1495616js/eslint-config@0.1.3...@c1495616js/eslint-config@0.1.4) (2022-08-03)
 
 **Note:** Version bump only for package @c1495616js/eslint-config
