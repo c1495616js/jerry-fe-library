@@ -1,6 +1,6 @@
 {
   "name": "@c1495616js/design-system",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

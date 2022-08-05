@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/c1495616js/jerry-fe-library/compare/documentation@0.1.0...documentation@0.1.1) (2022-08-05)
+
+
+### Bug Fixes
+
+* documentation build ([0d1ef68](https://github.com/c1495616js/jerry-fe-library/commit/0d1ef683acce35a4ac742a0559a9dd24af994dc2))
+
+
+
+
+
 # 0.1.0 (2022-08-05)
 
 
