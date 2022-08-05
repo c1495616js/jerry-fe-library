@@ -1,0 +1,122 @@
+---
+sidebar_position: 1
+---
+
+# Amit Sheen - React problems, CSS solutions | ReactNext 2021
+
+[video link](https://www.youtube.com/watch?v=GW8sAZOUntg&list=PLMYVq3z1QxSq8U5MBE5XE3pcBQt75bZXk&index=20)
+
+## accordian
+
+If there is only one item in `accordian`, then it should be opened by default.
+
+But how do we know how many items?
+
+![](img/2022-08-05-13-42-55.png)
+
+![](img/2022-08-05-13-45-02.png)
+
+### JS solution.
+
+![](img/2022-08-05-13-36-22.png)
+
+### CSS solution.
+
+![](img/2022-08-05-13-42-31.png)
+
+---
+
+## Dialog
+
+![](img/2022-08-05-14-28-02.png)
+![](img/2022-08-05-14-27-08.png)
+
+- if comment out both `approveProps` and `cancelProps`
+
+![](img/2022-08-05-14-29-33.png)
+
+### CSS solutions
+
+![](img/2022-08-05-14-30-45.png)
+
+```css
+&:empty {
+  display: none;
+}
+```
+
+---
+
+## User List
+
+![](img/2022-08-05-14-33-03.png)
+
+### Scenario
+
+- `odd` align left
+- `even` align right.
+
+### CSS solutions
+
+![](img/2022-08-05-14-35-55.png)
+
+```css
+&:nth-child(odd) {
+  aligh-self: flex-start;
+}
+&:nth-child(even) {
+  aligh-self: flex-end;
+}
+```
+
+To be responsive
+
+```css
+@media (min-width: 460px) {
+  &:nth-child(odd) {
+    aligh-self: flex-start;
+  }
+  &:nth-child(even) {
+    aligh-self: flex-end;
+  }
+}
+```
+
+## Pseudo-classes
+
+![](img/2022-08-05-14-41-26.png)
+
+```css
+::before
+::after
+```
+
+## User List has zero user
+
+![](img/2022-08-05-14-42-58.png)
+
+### CSS solutions
+
+![](img/2022-08-05-14-43-39.png)
+
+```css
+&:empty::after {
+  content: 'No result';
+  ## can be dynamic with attr
+  content: attr(content);
+  color: red;
+  ...;
+}
+```
+
+- [w3school attr()](https://www.w3schools.com/cssref/func_attr.asp)
+- [mdn attr()](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)
+
+## Conclusion
+
+![](img/2022-08-05-14-47-24.png)
+
+## Resources
+
+- [stylestage](https://stylestage.dev/)
+  can only use `css` with the same `html`.
