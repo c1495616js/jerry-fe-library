@@ -1,0 +1,43 @@
+---
+sidebar_position: 7
+---
+
+# VSCode Extensions Detail
+
+## `mushan.vscode-paste-image`
+
+![](img/2022-08-05-13-52-15.png)
+
+### Settings
+
+```json title=".vscode/settings.json"
+{
+ ...,
+  // paste image to markdown
+  "pasteImage.path": "${currentFileDir}/img",
+  "pasteImage.insertPattern": "![](img/${imageFileName})"
+}
+```
+
+```json title=".vscode/extension.json"
+{
+  "recommendations": [
+   ...,
+    "mushan.vscode-paste-image"
+  ]
+}
+```
+
+### Command
+
+For example in `Mac`
+
+- copy image: `cmd+ctrl+shift+4`
+- paste image to markdown: `cmd+opt+v`
+
+### Result
+
+- generate folder `img` and with the image file inside.
+- generate the image link in the markdown file. format like this: `![](img/2022-08-05-13-52-15.png)`
+
+![](img/2022-08-05-13-57-16.png)
