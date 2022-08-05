@@ -13,6 +13,7 @@
     "bradlc.vscode-tailwindcss",
     "stylelint.vscode-stylelint",
     "christian-kohler.npm-intellisense",
-    "DavidAnson.vscode-markdownlint"
+    "DavidAnson.vscode-markdownlint",
+    "mushan.vscode-paste-image"
   ]
 }
