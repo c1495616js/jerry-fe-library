@@ -1,4 +1,8 @@
-# Setup Husky + Commitlint + Commitizen
+---
+sidebar_position: 4
+---
+
+# Setup Husky + Commitlint + Commitizen + Lintstaged
 
 ## Idea
 
@@ -95,13 +99,4 @@ For the `--no-stash`, refering [this](https://github.com/okonet/lint-staged/issu
 
 ```bash
 npm run lint-staged
-```
-
-## Lerna
-
-- Add package
-  (scope is the `name` property in `package.json`)
-
-```bash
-npx lerna add --dev lint-staged --scope=@c1495616js/myhooks
 ```
