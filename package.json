@@ -10,7 +10,7 @@
     "prerelease": "npm run lint && npm run test",
     "release": "lerna version",
     "ci:bootstrap": "npm ci && lerna bootstrap --ci",
-    "ci:publish": "lerna publish from-package --yes --no-verify-access",
+    "ci:publish": "lerna publish from-package --yes --no-verify-access --no-private",
     "prepare": "is-ci || husky install",
     "commit": "cz",
     "lint-staged": "lerna run lint-staged"
