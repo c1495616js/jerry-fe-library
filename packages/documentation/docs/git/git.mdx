@@ -1,0 +1,81 @@
+# Git
+
+### Remove tracking from .git, but file is still in working directory.
+
+```bash
+git rm --cached <file_name>
+# then add <file> to .gitignore
+git add -A
+git commit -m "remove tracking of file"
+```
+
+### Change commit message.
+
+- `git rebase`
+- `git reset` to remove current commmit, then re commit.
+- `--amend` to change the latest commit message. (before push to github)
+  will create new commit object
+
+```bash
+git commit --amend -m "change to new message"
+```
+
+### Add new change to latest commit.
+
+- `git reset`
+- `--amend`
+
+```bash
+git add <new_file>
+git commit --amend --no-edit
+```
+
+### Add empty folder
+
+```bash
+mkdir new_folder
+touch new_folder/.keep
+```
+
+### Clean file which is in .gitignore
+
+```bash
+git clean -fx
+```
+
+### Check specific commit history of the file.
+
+```bash
+git log -p <file_name>
+```
+
+`-p` will show the detail of the changes
+
+### Check which line is edit by whom.
+
+```bash
+git blame -L 5,10 <file_name>
+```
+
+`-L 5,10` will show line 5 to line 10
+
+### Accidentally delete files
+
+- `git checkout` will get the file in `staging are`
+  and override in the working directory.
+
+```bash
+git checkout <file_name>
+```
+
+- override the existing file from previous 2 versions
+
+```bash
+git checkout HEAD~2 <file_name>
+```
+
+### What is `HEAD`
+
+- `HEAD` is pointing to the `branch`.
+- And `brach` is pointing to the commit object.
+- If HEAD is not pointing to the branch, called `detached head`.
